@@ -5,14 +5,14 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Mvc4_Less
+namespace Mvc4.ServiceStack
 {
     public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            routes.IgnoreRoute("servicestack/{*pathInfo}");
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

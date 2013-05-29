@@ -30,3 +30,50 @@ C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\ru-ru\BundleTransformer.C
 C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\obj\Debug\Mvc4ServiceStack.Site.csprojResolveAssemblyReference.cache
 C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\obj\Debug\Mvc4 Less.dll
 C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\obj\Debug\Mvc4 Less.pdb
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\obj\Debug\Mvc4 Less.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\obj\Debug\Mvc4 Less.pdb
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\Mvc4 Less.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\Mvc4 Less.pdb
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\Antlr3.Runtime.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\BundleTransformer.Core.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\Microsoft.Web.Infrastructure.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\Newtonsoft.Json.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.Common.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.Interfaces.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.OrmLite.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.OrmLite.SqlServer.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.Redis.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.ServiceInterface.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.Text.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Net.Http.Formatting.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Helpers.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Http.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Http.WebHost.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Mvc.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Optimization.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Razor.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Deployment.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Razor.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\WebGrease.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.Common.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.Interfaces.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.OrmLite.pdb
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.OrmLite.SqlServer.pdb
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.Redis.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ServiceStack.Text.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\Newtonsoft.Json.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Net.Http.Formatting.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Helpers.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Http.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Http.WebHost.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Mvc.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.Razor.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Deployment.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Razor.xml
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\obj\Debug\Mvc4ServiceStack.Site.csprojResolveAssemblyReference.cache

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Mvc4_Less
+namespace Mvc4.ServiceStack
 {
     public class FilterConfig
     {

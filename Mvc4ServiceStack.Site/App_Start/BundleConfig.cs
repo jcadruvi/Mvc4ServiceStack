@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Optimization;
 
-namespace Mvc4_Less.App_Start
+namespace Mvc4.ServiceStack.App_Start
 {
     public class BundleConfig
     {

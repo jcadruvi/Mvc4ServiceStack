@@ -4,3 +4,25 @@
 }
 
 <h2>Index</h2>
+
+<script type="text/javascript">
+
+    (function () {
+        var postData = {};
+        postData.name = 'World!';
+        $.ajax({
+            data: postData,
+            dataType: 'json',
+            success: function(r) {
+                alert(r.Result);
+            },
+            type: 'GET',
+            url: 'servicestack/hello'
+        });
+        //$.getJSON('servicestack/hello/World!', function (r) {
+        //    alert(r.Result);
+        //});
+    })();
+    
+    
+</script>
