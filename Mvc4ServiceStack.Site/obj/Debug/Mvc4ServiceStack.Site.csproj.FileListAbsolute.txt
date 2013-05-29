@@ -1,0 +1,32 @@
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\Mvc4 Less.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\Mvc4 Less.pdb
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\Antlr3.Runtime.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\BundleTransformer.Core.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\Microsoft.Web.Infrastructure.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\Newtonsoft.Json.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Net.Http.Formatting.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Helpers.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Http.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Http.WebHost.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Mvc.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Optimization.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Razor.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Deployment.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Razor.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\WebGrease.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\Newtonsoft.Json.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Net.Http.Formatting.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Helpers.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Http.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Http.WebHost.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Mvc.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.Razor.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Deployment.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Razor.xml
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\obj\Debug\Mvc4ServiceStack.Site.csprojResolveAssemblyReference.cache
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\obj\Debug\Mvc4 Less.dll
+C:\github\MVC4 Service Stack\Mvc4ServiceStack.Site\obj\Debug\Mvc4 Less.pdb

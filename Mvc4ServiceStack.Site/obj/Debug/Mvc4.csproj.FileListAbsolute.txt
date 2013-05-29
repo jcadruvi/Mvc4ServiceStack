@@ -1,0 +1,32 @@
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\Mvc4 Less.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\Mvc4 Less.pdb
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\Antlr3.Runtime.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\BundleTransformer.Core.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\Newtonsoft.Json.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Net.Http.Formatting.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Helpers.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Http.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Http.WebHost.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Mvc.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Optimization.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Razor.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.WebPages.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.WebPages.Razor.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\WebGrease.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\Newtonsoft.Json.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Net.Http.Formatting.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Helpers.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Http.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Http.WebHost.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Mvc.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.Razor.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.WebPages.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\System.Web.WebPages.Razor.xml
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\obj\Debug\Mvc4.csprojResolveAssemblyReference.cache
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\obj\Debug\Mvc4 Less.dll
+C:\Users\jcadruvi\Documents\Visual Studio 2012\Projects\Basic Mvc4\Mvc4 Less\obj\Debug\Mvc4 Less.pdb
