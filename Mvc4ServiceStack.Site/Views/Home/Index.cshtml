@@ -1,15 +1,63 @@
-﻿@{
+﻿@using System.Web.Optimization
+@model Mvc4.ServiceStack.Models.StoreViewModel
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@Styles.Render("~/Content/index")
+
 <div id="storeGrid"></div>
 
 <div>
-    <span>Retailer:</span>
-    <span>
-        <input id="retailer" type="text" />
-    </span>
+    <div class="storeLine">
+        <span class="storeLabels">Retailer</span>
+        <span>
+            @Html.TextBoxFor(model => model.RetailerId, new { @id = "retailer" })
+        </span>
+    </div>
+    <div class="storeLine">
+        <span class="storeLabels">Store Id</span>
+        <span>
+            @Html.TextBoxFor(model => model.StoreId, new { @id = "storeId" })
+        </span>
+    </div>
+    <div class="storeLine">
+        <span class="storeLabels">Name</span>
+        <span>
+            @Html.TextBoxFor(model => model.Name, new { @id = "name" })
+        </span>
+    </div>
+    <div class="storeLine">
+        <span class="storeLabels">Number</span>
+        <span>
+            @Html.TextBoxFor(model => model.Number, new { @id = "number" })
+        </span>
+    </div>
+    <div class="storeLine">
+        <span class="storeLabels">City</span>
+        <span>
+            @Html.TextBoxFor(model => model.City, new { @id = "city" })
+        </span>
+    </div>
+    <div class="storeLine">
+        <span class="storeLabels">State</span>
+        <span>
+            @Html.TextBoxFor(model => model.State, new { @id = "state" })
+        </span>
+    </div>
+    <div class="storeLine">
+        <span class="storeLabels">District</span>
+        <span>
+            @Html.TextBoxFor(model => model.OrgLevelId, new { @id = "orgLevelId" })
+        </span>
+    </div>
+    <div class="storeLine">
+        <span class="storeLabels">Territory</span>
+        <span>
+            @Html.TextBoxFor(model => model.SubOrgLevelId, new { @id = "subOrgLevelId" })
+        </span>
+    </div>
 </div>
 
 <script type="text/javascript">
@@ -29,27 +77,62 @@
         //$.getJSON('servicestack/hello/World!', function (r) {
         //    alert(r.Result);
         //});
-        //$('#retailer').kendoComboBox({
-        //    dataTextField: 'Value',
-        //    dataValueField: 'Key',
-        //    dataSource: {
-        //        type: "json",
-        //        transport: {
-        //            read: {
-        //                url: "@Url.Action("GetUsers", "JobManagement")",
-        //                dataType: "json",
-        //                type: "POST"
-        //            }
-        //        }
-        //    },
-        //    filter: "contains",
-        //    suggest: true
-        //});
+        $('#orgLevelId').kendoComboBox({
+            change: function () {
+                var subOrgLevelComboBoxData = $('#subOrgLevelId').data('kendoComboBox');
+                subOrgLevelComboBoxData.value(null);
+                subOrgLevelComboBoxData.dataSource.read();
+            },
+            dataTextField: 'Value',
+            dataValueField: 'Key',
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: function (options) {
+                        var postData = {};
+                        $.ajax({
+                            data: postData,
+                            dataType: 'json',
+                            url: "servicestack/orglevel",
+                            success: function (result) {
+                                options.success(result);
+                            },
+                            type: "GET"
+                        });
+                    }
+                }
+            },
+            filter: "contains",
+            suggest: true
+        });
+        $('#retailer').kendoComboBox({
+            dataTextField: 'Value',
+            dataValueField: 'Key',
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: function (options) {
+                        var postData = {};
+                        $.ajax({
+                            data: postData,
+                            dataType: 'json',
+                            url: "servicestack/retailer",
+                            success: function (result) {
+                                options.success(result);
+                            },
+                            type: "GET"
+                        });
+                    }
+                }
+            },
+            filter: "contains",
+            suggest: true
+        });
         $("#storeGrid").kendoGrid({
             autoBind: true,
             filterable: false,
             groupable: false,
-            height: "500px",
+            height: "300px",
             pageable: true,
             resizeable: true,
             selectable: "multiple, row",
@@ -127,6 +210,33 @@
                     title: "Territory",
                     width: "120px"
                 }]
+        });
+        $('#subOrgLevelId').kendoComboBox({
+            autoBind: false,
+            cascadeFrom: "orgLevelId",
+            dataTextField: "Value",
+            dataValueField: "Key",
+            dataSource: {
+                serverFiltering: true,
+                type: "json",
+                transport: {
+                    read: function (options) {
+                        var postData = {};
+                        postData.OrgLevelId = $('#orgLevelId').data('kendoComboBox').value();
+                        $.ajax({
+                            data: postData,
+                            dataType: 'json',
+                            url: "servicestack/suborglevel",
+                            success: function (result) {
+                                options.success(result);
+                            },
+                            type: "GET"
+                        });
+                    }
+                }
+            },
+            filter: "contains",
+            suggest: true
         });
     })();
     

@@ -64,15 +64,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\OrgLevelService.cs" />
+    <Compile Include="Service\RetailerService.cs" />
     <Compile Include="Service\StoreService.cs" />
+    <Compile Include="Service\SubOrgLevelService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mc4.ServiceStack.Dto\Mc4.ServiceStack.ServiceModel.csproj">
+    <ProjectReference Include="..\Mc4.ServiceStack.ServiceModel\Mvc4.ServiceStack.ServiceModel.csproj">
       <Project>{a9845e05-78a8-40a9-b7d2-831d5a897f9a}</Project>
-      <Name>Mc4.ServiceStack.ServiceModel</Name>
+      <Name>Mvc4.ServiceStack.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

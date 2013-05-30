@@ -28,6 +28,9 @@ namespace Mvc4.ServiceStack.App_Start
                          "~/Content/kendo.mobitor.css",
                          "~/Content/Site.css"));
 
+            bundles.Add(new StyleBundle("~/Content/index")
+                .Include("~/Content/Index.css"));
+
             bundles.Add(new ScriptBundle("~/Scripts/layout.bundle.javascript")
                 .Include("~/Scripts/jquery-1.9.1.js",
                          "~/Scripts/knockout-2.2.1.min.js",

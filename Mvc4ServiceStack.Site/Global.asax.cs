@@ -7,9 +7,9 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Mc4.ServiceStack.ServiceModel.Request;
 using Mvc4.ServiceStack.Service;
 using Mvc4.ServiceStack.App_Start;
+using Mvc4.ServiceStack.ServiceModel.Request;
 using ServiceStack.WebHost.Endpoints;
 
 namespace Mvc4.ServiceStack
@@ -35,7 +35,10 @@ namespace Mvc4.ServiceStack
             public override void Configure(Funq.Container container)
             {
                 Routes
-                    .Add<GetOnly>("/store");
+                    .Add<OrgLevelRequest>("/orglevel")
+                    .Add<RetailerRequest>("/retailer")
+                    .Add<GetOnlyStore>("/store")
+                    .Add<SubOrgLevelRequest>("/suborglevel");
 
             }
         }

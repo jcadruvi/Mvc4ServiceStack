@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
-using Mc4.ServiceStack.ServiceModel.Request;
-using Mc4.ServiceStack.ServiceModel.Response;
+using Mvc4.ServiceStack.ServiceModel.Request;
+using Mvc4.ServiceStack.ServiceModel.Response;
 using ServiceStack.ServiceHost;
 
 namespace Mvc4.ServiceStack.Service
@@ -15,7 +15,7 @@ namespace Mvc4.ServiceStack.Service
     public class StoreService : IService
     {
         // Gets a list of all stores. 
-        public IEnumerable<StoreResponse> Get(GetOnly store)
+        public IEnumerable<StoreResponse> Get(GetOnlyStore store)
         {
             ICollection<StoreResponse> response = new Collection<StoreResponse>();
             response.Add(new StoreResponse 
