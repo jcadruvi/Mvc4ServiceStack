@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4.ServiceStack.Site", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4.ServiceStack.Service", "Mvc4ServiceStack.Service\Mvc4.ServiceStack.Service.csproj", "{0907BD2D-2582-4E32-BF4C-C31FAB642AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc4.ServiceStack.ServiceModel", "Mc4.ServiceStack.Dto\Mc4.ServiceStack.ServiceModel.csproj", "{A9845E05-78A8-40A9-B7D2-831D5A897F9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc4.ServiceStack.ServiceModel", "Mc4.ServiceStack.ServiceModel\Mc4.ServiceStack.ServiceModel.csproj", "{A9845E05-78A8-40A9-B7D2-831D5A897F9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
