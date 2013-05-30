@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Mvc4ServiceStack.Service.Dto;
+using Mc4.ServiceStack.Dto.Request;
+using Mc4.ServiceStack.Dto.Response;
 using ServiceStack.ServiceHost;
 
 namespace Mvc4.ServiceStack.Service

@@ -7,9 +7,9 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Mc4.ServiceStack.Dto.Request;
 using Mvc4.ServiceStack.Service;
 using Mvc4.ServiceStack.App_Start;
-using Mvc4ServiceStack.Service.Dto;
 using ServiceStack.WebHost.Endpoints;
 
 namespace Mvc4.ServiceStack
