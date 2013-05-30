@@ -76,3 +76,4 @@ C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.xml
 C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Deployment.xml
 C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\System.Web.WebPages.Razor.xml
 C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\github\Mvc4ServiceStack\Mvc4ServiceStack.Site\obj\Debug\Mvc4ServiceStack.Site.csprojResolveAssemblyReference.cache

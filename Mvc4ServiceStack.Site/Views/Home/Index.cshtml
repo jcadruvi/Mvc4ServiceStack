@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<div id="storeGrid"></div>
 
 <script type="text/javascript">
 
@@ -22,6 +22,55 @@
         //$.getJSON('servicestack/hello/World!', function (r) {
         //    alert(r.Result);
         //});
+
+        $("#storeGrid").kendoGrid({
+            autoBind: false,
+            filterable: false,
+            groupable: false,
+            height: "500px",
+            pageable: true,
+            resizeable: true,
+            selectable: "multiple, row",
+            sortable: {
+                mode: "single",
+                allowUnsort: false
+            },
+            columns: [{
+                field: "RetailerName",
+                title: "Retailer Name",
+                    width: "120px"
+                },
+                {
+                field: "StoreId",
+                title: "Store Id",
+                    width: "120px"
+                },
+                {
+                    field: "StoreName",
+                    title: "Name",
+                    width: "180px"
+                }, {
+                    field: "StoreNumber",
+                    title: "Number",
+                    width: "90px"
+                }, {
+                    field: "City",
+                    title: "City",
+                    width: "190px"
+                }, {
+                    field: "State",
+                    title: "State",
+                    width: "60px"
+                }, {
+                    field: "OrgLevel",
+                    title: "District",
+                    width: "120px"
+                }, {
+                    field: "SubOrgLevel",
+                    title: "Territory",
+                    width: "120px"
+                }]
+        });
     })();
     
     

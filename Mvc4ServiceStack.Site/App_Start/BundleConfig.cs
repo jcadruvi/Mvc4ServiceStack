@@ -25,6 +25,7 @@ namespace Mvc4.ServiceStack.App_Start
 
             bundles.Add(new StyleBundle("~/Content/layout.bundle.css")
                 .Include("~/Content/kendo.common.css",
+                         "~/Content/kendo.mobitor.css",
                          "~/Content/Site.css"));
 
             bundles.Add(new ScriptBundle("~/Scripts/layout.bundle.javascript")

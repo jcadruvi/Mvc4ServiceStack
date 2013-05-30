@@ -9,6 +9,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Mvc4.ServiceStack.Service;
 using Mvc4.ServiceStack.App_Start;
+using Mvc4ServiceStack.Service.Dto;
 using ServiceStack.WebHost.Endpoints;
 
 namespace Mvc4.ServiceStack
@@ -34,8 +35,8 @@ namespace Mvc4.ServiceStack
             public override void Configure(Funq.Container container)
             {
                 Routes
-                  .Add<Store>("/store")
-                  .Add<Store>("/store/{Name}");
+                  .Add<StoreRequest>("/store")
+                  .Add<StoreRequest>("/store/{Name}");
             }
         }
 
