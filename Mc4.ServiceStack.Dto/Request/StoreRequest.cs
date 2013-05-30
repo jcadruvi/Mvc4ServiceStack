@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mc4.ServiceStack.Dto.Request
+namespace Mc4.ServiceStack.ServiceModel.Request
 {
     public class StoreRequest
     {
@@ -15,5 +15,9 @@ namespace Mc4.ServiceStack.Dto.Request
         public string Number { get; set; }
         public string City { get; set; }
         public string State { get; set; }
+        public int? OrgLevelId { get; set; }
+        public string OrgLevelName { get; set; }
+        public int? SubOrgLevelId { get; set; }
+        public string SubOrgLevelName { get; set; }
     }
 }

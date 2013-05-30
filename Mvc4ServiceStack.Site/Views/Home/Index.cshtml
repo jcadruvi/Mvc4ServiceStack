@@ -5,26 +5,48 @@
 
 <div id="storeGrid"></div>
 
+<div>
+    <span>Retailer:</span>
+    <span>
+        <input id="retailer" type="text" />
+    </span>
+</div>
+
 <script type="text/javascript">
 
     (function () {
-        var postData = {};
-        postData.name = 'World!';
-        $.ajax({
-            data: postData,
-            dataType: 'json',
-            success: function(r) {
-                alert(r.Result);
-            },
-            type: 'GET',
-            url: 'servicestack/store'
-        });
+        //var postData = {};
+        //postData.name = 'World!';
+        //$.ajax({
+        //    data: postData,
+        //    dataType: 'json',
+        //    success: function(r) {
+        //        alert(r.Result);
+        //    },
+        //    type: 'GET',
+        //    url: 'servicestack/store'
+        //});
         //$.getJSON('servicestack/hello/World!', function (r) {
         //    alert(r.Result);
         //});
-
+        //$('#retailer').kendoComboBox({
+        //    dataTextField: 'Value',
+        //    dataValueField: 'Key',
+        //    dataSource: {
+        //        type: "json",
+        //        transport: {
+        //            read: {
+        //                url: "@Url.Action("GetUsers", "JobManagement")",
+        //                dataType: "json",
+        //                type: "POST"
+        //            }
+        //        }
+        //    },
+        //    filter: "contains",
+        //    suggest: true
+        //});
         $("#storeGrid").kendoGrid({
-            autoBind: false,
+            autoBind: true,
             filterable: false,
             groupable: false,
             height: "500px",
@@ -35,22 +57,57 @@
                 mode: "single",
                 allowUnsort: false
             },
+            dataSource: {
+                pageSize: 30,
+                type: "json",
+                transport: {
+                    read: function (options) {
+                        var postData = {};
+                        $.ajax({
+                            data: postData,
+                            dataType: 'json',
+                            url: "servicestack/store",
+                            success: function (result) {
+                                options.success(result);
+                            },
+                            type: "GET"
+                        });
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "Id",
+                        fields: {
+                            RetailerId: { type: "number" },
+                            RetailerName: { type: "string" },
+                            Name: { type: "string" },
+                            Number: { type: "number" },
+                            City: { type: "string" },
+                            State: { type: "string" },
+                            OrgLevelName: { type: "string" },
+                            OrgLevelId: { type: "string" },
+                            SubOrgLevelName: { type: "string" },
+                            SubOrgLevelId: { type: "string" }
+                        }
+                    }
+                }
+            },
             columns: [{
                 field: "RetailerName",
                 title: "Retailer Name",
                     width: "120px"
                 },
                 {
-                field: "StoreId",
+                field: "Id",
                 title: "Store Id",
-                    width: "120px"
+                    width: "70px"
                 },
                 {
-                    field: "StoreName",
+                    field: "Name",
                     title: "Name",
                     width: "180px"
                 }, {
-                    field: "StoreNumber",
+                    field: "Number",
                     title: "Number",
                     width: "90px"
                 }, {
@@ -62,11 +119,11 @@
                     title: "State",
                     width: "60px"
                 }, {
-                    field: "OrgLevel",
+                    field: "OrgLevelName",
                     title: "District",
                     width: "120px"
                 }, {
-                    field: "SubOrgLevel",
+                    field: "SubOrgLevelName",
                     title: "Territory",
                     width: "120px"
                 }]
