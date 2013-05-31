@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mvc4.ServiceStack.ServiceModel</RootNamespace>
-    <AssemblyName>Mc4.ServiceStack.Dto</AssemblyName>
+    <AssemblyName>Mc4.ServiceStack.ServiceModel</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
