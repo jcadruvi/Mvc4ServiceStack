@@ -12,28 +12,61 @@
     self.storeGridData = null;
     self.subOrgLevelCombo = null;
 
-    self.onStoreGridChanged = function() {
+    var getSelectedStoreId = function () {
+        var dataItem;
         if (!self.storeGridData) {
-            return;
+            return null;
         }
-        var dataItem = self.storeGridData.dataItem(self.storeGridData.select());
+        dataItem = self.storeGridData.dataItem(self.storeGridData.select());
         if (!dataItem) {
-            return;
+            return null;
         }
-        self.city(dataItem.City);
-        self.id(dataItem.Id);
-        self.name(dataItem.Name);
-        self.number(dataItem.Number);
-        self.state(dataItem.State);
-        if (self.orgLevelCombo) {
-            self.orgLevelCombo.value(dataItem.OrgLevelId);
-        }
-        if (self.retailerIdCombo) {
-            self.retailerIdCombo.value(dataItem.RetailerId);
-        }
-        if (self.subOrgLevelCombo) {
-            self.subOrgLevelCombo.value(dataItem.SubOrgLevelId);
-        }
+        return dataItem.Id;
+    };
+
+    self.onDeleteClick = function() {
+        var postData = {};
+        
+        postData.Id = getSelectedStoreId();
+        
+        $.ajax({
+            data: postData,
+            dataType: 'json',
+            success: function (result) {
+                
+            },
+            type: 'DELETE',
+            url: 'servicestack/store'
+        });
+    };
+
+    self.onStoreGridChanged = function() {
+        var postData = {};
+        
+        postData.Id = getSelectedStoreId();
+
+        $.ajax({
+            data: postData,
+            dataType: 'json',
+            success: function(result) {
+                self.city(result.City);
+                self.id(result.Id);
+                self.name(result.Name);
+                self.number(result.Number);
+                self.state(result.State);
+                if (self.orgLevelCombo) {
+                    self.orgLevelCombo.value(result.OrgLevelId);
+                }
+                if (self.retailerIdCombo) {
+                    self.retailerIdCombo.value(result.RetailerId);
+                }
+                if (self.subOrgLevelCombo) {
+                    self.subOrgLevelCombo.value(result.SubOrgLevelId);
+                }
+            },
+            type: 'GET',
+            url: 'servicestack/store'
+        });
     };
 
     self.setObservables = function() {

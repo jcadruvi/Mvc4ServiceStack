@@ -64,10 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\OrgLevelService.cs" />
-    <Compile Include="Service\RetailerService.cs" />
+    <Compile Include="Service\OperationService.cs" />
     <Compile Include="Service\StoreService.cs" />
-    <Compile Include="Service\SubOrgLevelService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

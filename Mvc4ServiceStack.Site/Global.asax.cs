@@ -37,7 +37,8 @@ namespace Mvc4.ServiceStack
                 Routes
                     .Add<OrgLevelRequest>("/orglevel")
                     .Add<RetailerRequest>("/retailer")
-                    .Add<GetOnlyStore>("/store")
+                    .Add<StoreRequest>("/store")
+                    .Add<GetOnlyStore>("/storeall")
                     .Add<SubOrgLevelRequest>("/suborglevel");
 
             }
