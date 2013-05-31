@@ -7,6 +7,7 @@
 
 @Styles.Render("~/Content/index")
 
+
 <div id="storeGrid"></div>
 
 <div>
@@ -19,31 +20,31 @@
     <div class="storeLine">
         <span class="storeLabels">Store Id</span>
         <span>
-            @Html.TextBoxFor(model => model.StoreId, new { @id = "storeId" })
+            @Html.TextBoxFor(model => model.StoreId, new { @class = "k-textbox", data_bind = "value: id", @id = "storeId" })
         </span>
     </div>
     <div class="storeLine">
         <span class="storeLabels">Name</span>
         <span>
-            @Html.TextBoxFor(model => model.Name, new { @id = "name" })
+            @Html.TextBoxFor(model => model.Name, new { @class = "k-textbox", data_bind = "value: name", @id = "name" })
         </span>
     </div>
     <div class="storeLine">
         <span class="storeLabels">Number</span>
         <span>
-            @Html.TextBoxFor(model => model.Number, new { @id = "number" })
+            @Html.TextBoxFor(model => model.Number, new { @class = "k-textbox", data_bind = "value: number",  @id = "number" })
         </span>
     </div>
     <div class="storeLine">
         <span class="storeLabels">City</span>
         <span>
-            @Html.TextBoxFor(model => model.City, new { @id = "city" })
+            @Html.TextBoxFor(model => model.City, new { @class = "k-textbox", data_bind = "value: city", @id = "city" })
         </span>
     </div>
     <div class="storeLine">
         <span class="storeLabels">State</span>
         <span>
-            @Html.TextBoxFor(model => model.State, new { @id = "state" })
+            @Html.TextBoxFor(model => model.State, new { @class = "k-textbox", data_bind = "value: state", @id = "state" })
         </span>
     </div>
     <div class="storeLine">
@@ -59,6 +60,8 @@
         </span>
     </div>
 </div>
+
+@Scripts.Render("~/Scripts/store.javascript")
 
 <script type="text/javascript">
 
@@ -77,6 +80,8 @@
         //$.getJSON('servicestack/hello/World!', function (r) {
         //    alert(r.Result);
         //});
+        var storeViewModel = new StoreViewModel();
+        storeViewModel.setObservables();
         $('#orgLevelId').kendoComboBox({
             change: function () {
                 var subOrgLevelComboBoxData = $('#subOrgLevelId').data('kendoComboBox');
@@ -105,6 +110,7 @@
             filter: "contains",
             suggest: true
         });
+        storeViewModel.orgLevelCombo = $('#orgLevelId').data('kendoComboBox');
         $('#retailer').kendoComboBox({
             dataTextField: 'Value',
             dataValueField: 'Key',
@@ -128,14 +134,18 @@
             filter: "contains",
             suggest: true
         });
+        storeViewModel.retailerIdCombo = $('#retailer').data('kendoComboBox');
         $("#storeGrid").kendoGrid({
             autoBind: true,
+            change: function() {
+                storeViewModel.onStoreGridChanged();
+            },
             filterable: false,
             groupable: false,
             height: "300px",
             pageable: true,
             resizeable: true,
-            selectable: "multiple, row",
+            selectable: "single, row",
             sortable: {
                 mode: "single",
                 allowUnsort: false
@@ -211,6 +221,7 @@
                     width: "120px"
                 }]
         });
+        storeViewModel.storeGridData = $('#storeGrid').data('kendoGrid');
         $('#subOrgLevelId').kendoComboBox({
             autoBind: false,
             cascadeFrom: "orgLevelId",
@@ -238,6 +249,7 @@
             filter: "contains",
             suggest: true
         });
+        storeViewModel.subOrgLevelCombo = $('#subOrgLevelId').data('kendoComboBox');
     })();
     
     

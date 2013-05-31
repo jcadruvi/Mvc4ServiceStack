@@ -43,6 +43,9 @@ namespace Mvc4.ServiceStack.App_Start
                          "~/Scripts/jquery.validate.js",
                          "~/Scripts/jquery.validate.unobtrusive.js",
                          "~/Scripts/jquery.unobtrusive-ajax.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/store.javascript")
+                .Include("~/Scripts/StoreViewModel.js"));
         }
     }
 }
