@@ -25,18 +25,16 @@
     };
 
     self.onDeleteClick = function() {
-        var postData = {};
+        var id;
         
-        postData.Id = getSelectedStoreId();
+        id = getSelectedStoreId();
         
         $.ajax({
-            data: postData,
-            dataType: 'json',
             success: function (result) {
                 
             },
             type: 'DELETE',
-            url: 'servicestack/store'
+            url: 'servicestack/store?id=' + id
         });
     };
 
