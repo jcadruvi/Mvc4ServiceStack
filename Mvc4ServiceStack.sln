@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4.ServiceStack.Service",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4.ServiceStack.ServiceModel", "Mc4.ServiceStack.ServiceModel\Mvc4.ServiceStack.ServiceModel.csproj", "{A9845E05-78A8-40A9-B7D2-831D5A897F9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4.ServiceStack.Repository", "Mvc4.ServiceStack.Repository\Mvc4.ServiceStack.Repository.csproj", "{2D9496F6-D540-48FF-AF40-D6B7FDD9A438}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{A9845E05-78A8-40A9-B7D2-831D5A897F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9845E05-78A8-40A9-B7D2-831D5A897F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9845E05-78A8-40A9-B7D2-831D5A897F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D9496F6-D540-48FF-AF40-D6B7FDD9A438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D9496F6-D540-48FF-AF40-D6B7FDD9A438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D9496F6-D540-48FF-AF40-D6B7FDD9A438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D9496F6-D540-48FF-AF40-D6B7FDD9A438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

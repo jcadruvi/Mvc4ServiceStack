@@ -74,6 +74,10 @@
       <Project>{a9845e05-78a8-40a9-b7d2-831d5a897f9a}</Project>
       <Name>Mvc4.ServiceStack.ServiceModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Mvc4.ServiceStack.Repository\Mvc4.ServiceStack.Repository.csproj">
+      <Project>{2d9496f6-d540-48ff-af40-d6b7fdd9a438}</Project>
+      <Name>Mvc4.ServiceStack.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

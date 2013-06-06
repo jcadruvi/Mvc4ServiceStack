@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using Mvc4.ServiceStack.ServiceModel.Request;
 using Mvc4.ServiceStack.ServiceModel.Response;
+using Mvc4.ServiceStack.Repository;
 using ServiceStack.ServiceHost;
 
 namespace Mvc4.ServiceStack.Service
@@ -14,10 +15,12 @@ namespace Mvc4.ServiceStack.Service
     /// </summary>
     public class StoreService : IService
     {
+        private IStoreRepository _repository;
         private IEnumerable<StoreResponse> _stores;
  
         public StoreService()
         {
+            _repository = new StoreRepository();
             _stores = Stores();
         }
 
