@@ -16,18 +16,16 @@ namespace Mvc4.ServiceStack.Service
     public class StoreService : IService
     {
         private IStoreRepository _repository;
-        private IEnumerable<StoreResponse> _stores;
  
         public StoreService()
         {
             _repository = StoreRepository.Instance;
-            _stores = Stores();
         }
 
         // Gets a list of all stores. 
         public IEnumerable<StoreResponse> Get(GetOnlyStore store)
         {
-            return Stores();
+            return _repository.GetStores();
         }
 
         public IEnumerable<KeyValuePair<string, string>> Get(OrgLevelRequest request)
@@ -56,7 +54,7 @@ namespace Mvc4.ServiceStack.Service
 
         public StoreResponse Get(StoreRequest store)
         {
-            return (from s in Stores()
+            return (from s in _repository.GetStores()
                     where s.Id == store.Id
                     select s).First();
         }
@@ -100,54 +98,6 @@ namespace Mvc4.ServiceStack.Service
             {
                 _repository.DeleteStore(store.Id.Value);
             }
-        }
-
-        private IEnumerable<StoreResponse> Stores()
-        {
-            ICollection<StoreResponse> response = new Collection<StoreResponse>();
-            response.Add(new StoreResponse
-            {
-                RetailerId = 1,
-                RetailerName = "Best Buy",
-                Id = 1,
-                Name = "Store 1",
-                Number = "1",
-                City = "San Jose",
-                State = "CA",
-                OrgLevelId = 1,
-                OrgLevelName = "1 - Bay Area",
-                SubOrgLevelId = 2,
-                SubOrgLevelName = "2 - San Jose"
-            });
-            response.Add(new StoreResponse
-            {
-                RetailerId = 1,
-                RetailerName = "Best Buy",
-                Id = 2,
-                Name = "Store 2",
-                Number = "2",
-                City = "San Jose",
-                State = "CA",
-                OrgLevelId = 1,
-                OrgLevelName = "1 - Bay Area",
-                SubOrgLevelId = 2,
-                SubOrgLevelName = "2 - San Jose"
-            });
-            response.Add(new StoreResponse
-            {
-                RetailerId = 1,
-                RetailerName = "Best Buy",
-                Id = 3,
-                Name = "Store 3",
-                Number = "3",
-                City = "San Jose",
-                State = "CA",
-                OrgLevelId = 1,
-                OrgLevelName = "1 - Bay Area",
-                SubOrgLevelId = 2,
-                SubOrgLevelName = "2 - San Jose"
-            });
-            return response;
         } 
     }
 }
