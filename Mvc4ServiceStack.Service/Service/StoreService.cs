@@ -87,9 +87,9 @@ namespace Mvc4.ServiceStack.Service
 
 
 
-        public object Post(StoreRequest store)
+        public void Post(StoreRequest store)
         {
-            return null;
+            _repository.UpdateStore(store);
         }
 
         public void Delete(StoreRequest store)
