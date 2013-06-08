@@ -20,7 +20,7 @@ namespace Mvc4.ServiceStack.Service
  
         public StoreService()
         {
-            _repository = new StoreRepository();
+            _repository = StoreRepository.Instance;
             _stores = Stores();
         }
 
@@ -96,6 +96,10 @@ namespace Mvc4.ServiceStack.Service
 
         public void Delete(StoreRequest store)
         {
+            if (store.Id.HasValue)
+            {
+                _repository.DeleteStore(store.Id.Value);
+            }
         }
 
         private IEnumerable<StoreResponse> Stores()
