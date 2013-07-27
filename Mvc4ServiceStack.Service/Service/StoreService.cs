@@ -87,9 +87,20 @@ namespace Mvc4.ServiceStack.Service
 
 
 
-        public void Post(StoreRequest store)
+        public StoreResponse Post(StoreRequest store)
         {
+            StoreResponse response = new StoreResponse { 
+                RetailerId = store.RetailerId,
+                Id = store.Id,
+                Name = store.Name,
+                Number = store.Number,
+                City = store.City,
+                State = store.State,
+                OrgLevelId = store.OrgLevelId,
+                SubOrgLevelId = store.SubOrgLevelId
+            };
             _repository.UpdateStore(store);
+            return response;
         }
 
         public void Delete(StoreRequest store)

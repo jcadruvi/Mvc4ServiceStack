@@ -67,8 +67,10 @@
         });
     };
 
-    self.onStoreSuccess = function () {
+    self.onStoreSuccess = function (result) {
         self.storeGridData.dataSource.read();
+        self.storeGridData.select($('tr[data-uid=' + self.storeGridData.dataSource.get(result.Id).uid + ']'));
+        $('tr[data-uid=' + self.storeGridData.dataSource.get(result.Id).uid + ']').addClass('k-state-selected')
     };
 
     self.setObservables = function() {
