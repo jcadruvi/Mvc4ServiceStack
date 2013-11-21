@@ -24,4 +24,7 @@ Since we are using Service Stack with MVC in order to avoid conflicts with MVC a
 
 This location allows the custom path of "servicestack" to be used in the URL for Service Stack API calls.
 
-The next step is to tell Service Stack where to find your web service. In the global.asax.cs file the StoreAppHost class is used to 
+The next step is to tell Service Stack where to find your web service. In the global.asax.cs file the StoreAppHost class is used to create the Service Stack Web Application. The application is initialized in Application_Start by the following line:
+
+(new StoreAppHost()).Init();
+
