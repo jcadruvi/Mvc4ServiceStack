@@ -28,3 +28,13 @@ The next step is to tell Service Stack where to find your web service. In the gl
 
 (new StoreAppHost()).Init();
 
+Routes are configured in the StoreAppHost Configure method. The following are the Routes for this application:
+
+	Routes
+        .Add<OrgLevelRequest>("/orglevel")
+        .Add<RetailerRequest>("/retailer")
+        .Add<StoreRequest>("/store")
+        .Add<GetOnlyStore>("/storeall")
+        .Add<SubOrgLevelRequest>("/suborglevel");
+		
+Service Stack is a message based web service which means that it uses messages to facilitate its communication.
