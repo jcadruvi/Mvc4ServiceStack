@@ -37,4 +37,4 @@ Routes are configured in the StoreAppHost Configure method. The following are th
         .Add<GetOnlyStore>("/storeall")
         .Add<SubOrgLevelRequest>("/suborglevel");
 		
-Service Stack is a message based web service which means that it uses messages to facilitate its communication.
+Service Stack is a message based web service which means that it uses messages to facilitate its communication. The route is bound to the messege which is the Request DTO. The Request can be filtered before it goes to the service. The service that is used is based on if a method in the service has a method that has a parameter of the Request DTO and has the HTTP verb. The service method will then  return the Response DTO.
