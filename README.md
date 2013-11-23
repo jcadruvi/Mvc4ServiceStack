@@ -37,4 +37,50 @@ Routes are configured in the StoreAppHost Configure method. The following are th
         .Add<GetOnlyStore>("/storeall")
         .Add<SubOrgLevelRequest>("/suborglevel");
 		
-Service Stack is a message based web service which means that it uses messages to facilitate its communication. The route is bound to the messege which is the Request DTO. The Request can be filtered before it goes to the service. The service that is used is based on if a method in the service has a method that has a parameter of the Request DTO and has the HTTP verb. The service method will then  return the Response DTO.
+Service Stack is a message based web service which means that it uses messages to facilitate its communication. The route is bound to the messege which is the Request DTO. The Request can be filtered before it goes to the service. The service that is used is based on if a method in the service has a method that has a parameter of the Request DTO and has the HTTP verb. The service method will then return the Response DTO. An example of how this would work is a HTTP get request with a route of "/store" will bind to the following request data transfer object:
+
+public class StoreRequest
+{
+    public int? RetailerId { get; set; }
+    public int? Id { get; set; }
+    public string Name { get; set; }
+    public string Number { get; set; }
+    public string City { get; set; }
+    public string State { get; set; }
+    public int? OrgLevelId { get; set; }
+    public int? SubOrgLevelId { get; set; }
+}
+
+Once the StoreRequest has been bound then Service Stack will look through all of the services that inherit from IService that have StoreRequest as a parameter and is a HTTP get method. In this application we only have one service called StoreService and there is only one Get method that has StoreRequest as the parameter which is the following:
+
+public StoreResponse Get(StoreRequest store)
+{
+	return (from s in _repository.GetStores()
+            where s.Id == store.Id
+            select s).First();
+}
+
+The Get method will return the following response DTO:
+
+public class StoreResponse
+{
+    public int? RetailerId { get; set; }
+    public string RetailerName { get; set; }
+    public int? Id { get; set; }
+    public string Name { get; set; }
+    public string Number { get; set; }
+    public string City { get; set; }
+    public string State { get; set; }
+    public int? OrgLevelId { get; set; }
+    public string OrgLevelName { get; set; }
+    public int? SubOrgLevelId { get; set; }
+    public string SubOrgLevelName { get; set; }
+}
+
+The Service Stack message based approach doesn't smoothly handle no parameter APIs. Since the route is bound to a message an API with no parameter will not normally have a message. In Service Stack you will need to create an empty message for the prameterless API. In this application getting retailers are an example of a parameterless API. A route of "/retailer" will be bound to the following RetailerRequest:
+
+public class RetailerRequest
+{
+}
+
+Notice that the RetailerRequest is simply a class with nothing in it. Servive Stack will then look for a HTTP get method with RetailerRequest as a parameter. In Service Stack a request DTO is always required.
